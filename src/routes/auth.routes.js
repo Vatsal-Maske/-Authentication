@@ -8,4 +8,14 @@ const authRouter = Router();
 
 authRouter.post("/register",authController.register);
 
+/**
+ * @route POST /api/auth/login
+ */
+authRouter.post("/login", authController.login);
+
+/**
+ * @route GET /api/auth/me
+ */
+authRouter.get("/me", authController.getMe);
+
 export default authRouter;

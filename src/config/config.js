@@ -10,14 +10,14 @@ if (!process.env.MONGOO_URI) {
     throw new Error("MONGOO_URI is not defined in environment variables");
 }
 
-if(!process.env.JWT_SCRET){
-    throw new Error("JWT_SCRET is not defined in environment variables");
+if(!process.env.JWT_SECRET){
+    throw new Error("JWT_SECRET is not defined in environment variables");
 }
 // ek config object bana rahe hain jisme env variable store karenge
 const config = {
     // process.env se MONGOO_URI leke object me daal rahe hain
     MONGOO_URI: process.env.MONGOO_URI,
-    JWT_SCRET: process.env.JWT_SCRET
+    JWT_SECRET: process.env.JWT_SECRET
 };
 
 // config object ko export kar rahe hain taaki dusri files me use ho sake
