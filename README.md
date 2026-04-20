@@ -82,7 +82,8 @@ A robust authentication system built with Node.js, Express, and MongoDB. This pr
 │   │   └── auth.controller.js
 │   ├── models
 │   │   ├── user.model.js
-│   │   └── session.model.js
+│   │   ├── session.model.js
+│   │   └── otp.model.js
 │   ├── routes
 │   │   └── auth.routes.js
 │   ├── services
